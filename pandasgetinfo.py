@@ -5,4 +5,5 @@ df = pd.read_excel(r"/home/nick/Desktop/Developing/Projects/SAEBot/Assets/Spread
 print(df ['ANAC'] [616])
 
 df.info()  # lista as colunas
-df2 = df.dropna('DATA PRATICO')
+df.groupby(['DATA PRATICO','ANAC']).sum()
+print(df)
