@@ -6,4 +6,3 @@ print(df ['ANAC'] [616])
 
 df.info()  # lista as colunas
 df.groupby(['DATA PRATICO','ANAC']).sum()
-print(df)
